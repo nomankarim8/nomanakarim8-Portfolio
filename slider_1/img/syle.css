@@ -60,6 +60,26 @@ header{
 
 /* আমরা যতটুকু কোড করেছি সে টুকু আগে আমাদের গিট হাবে রাখি */
 
+/*এখন আমরা আবার সিএসএস করবো */
+.slider.list .item .content{
+
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+    width: max-content;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    text-align: left;
+    gap: 80px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: poppins;
+    text-shadow: 0 0 80px #000;
+
+}
+
 
 
 
