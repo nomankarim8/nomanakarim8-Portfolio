@@ -448,7 +448,8 @@ p {
 /* whomi8 End About Section */
 
 
-/* contact Section */
+/* whomi8 contact Section */
+
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
