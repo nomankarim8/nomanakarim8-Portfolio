@@ -675,7 +675,7 @@ p {
 
 /* whomi8 Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
-	/* header */
+	/* whomi8 header */
 	#header .hamburger {
 		display: none;
 	}
@@ -695,7 +695,7 @@ p {
 	#header .nav-list ul a:after {
 		display: none;
 	}
-	/* End header */
+	/* whomi8 End header */
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
