@@ -673,7 +673,7 @@ p {
 }
 /* whomi8 End Media Query For Tablet */
 
-/* Media Query For Desktop */
+/* whomi8 Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
 	#header .hamburger {
