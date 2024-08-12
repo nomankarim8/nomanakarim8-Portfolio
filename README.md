@@ -11,7 +11,7 @@ Welcome to my portfolio website! This project showcases my skills, projects, and
 - [Contact](#contact)
 
 ## Demo
-You can view a live demo of the website [here](https://your-website-url.com).
+You can view a live demo of the website [here](https://nomankarim8.github.io/nomanakarim8-Portfolio/).
 
 ## Features
 - **Responsive Design**: The website is fully responsive and looks great on all devices.
