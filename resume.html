@@ -1,70 +1,94 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Resume</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a clean look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-  <div class="resume">
-    <h1>Your Name</h1>
-    <p><strong>Email:</strong> example@email.com | <strong>Phone:</strong> +8801XXXXXXXXX</p>
-    <p><strong>Location:</strong> Dhaka, Bangladesh</p>
-    <p><strong>Portfolio:</strong> yourwebsite.com | <strong>GitHub:</strong> github.com/yourusername</p>
+<body class="bg-gray-100 min-h-screen flex justify-center items-start py-4 px-2 sm:py-6 sm:px-4 md:py-8 md:px-6 lg:py-10 lg:px-8">
+    <div class="resume bg-white shadow-lg rounded-xl p-5 sm:p-8 md:p-10 lg:p-12 max-w-4xl w-full mx-auto my-4 sm:my-8">
+        <!-- Header Section -->
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-3 text-center leading-tight">Your Name</h1>
+        <div class="text-sm sm:text-base md:text-lg text-gray-700 mb-6 text-center flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-y-1 sm:gap-y-0 sm:gap-x-4 leading-relaxed">
+            <p><strong class="font-semibold">Email:</strong> example@email.com</p>
+            <p><strong class="font-semibold">Phone:</strong> +8801XXXXXXXXX</p>
+            <p><strong class="font-semibold">Location:</strong> Dhaka, Bangladesh</p>
+            <p><strong class="font-semibold">Portfolio:</strong> <a href="http://yourwebsite.com" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">yourwebsite.com</a></p>
+            <p><strong class="font-semibold">GitHub:</strong> <a href="http://github.com/yourusername" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></p>
+        </div>
 
-    <div class="section">
-      <h2>Objective</h2>
-      <p>Passionate and dedicated Computer Science student aiming to build a career in software development and cybersecurity. Seeking opportunities to contribute skills and grow through practical experience.</p>
-    </div>
+        <!-- Objective Section -->
+        <div class="section mb-7 pb-3 border-b border-gray-200">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 border-l-4 border-blue-500 pl-3">Objective</h2>
+            <p class="text-base sm:text-lg text-gray-700 leading-relaxed">Passionate and dedicated Computer Science student aiming to build a career in software development and cybersecurity. Seeking opportunities to contribute skills and grow through practical experience.</p>
+        </div>
 
-    <div class="section">
-      <h2>Education</h2>
-      <p><strong>B.Sc. in Computer Science & Engineering</strong><br> University Name — 2021–2025<br> CGPA: 3.85/4.00</p>
-    </div>
+        <!-- Education Section -->
+        <div class="section mb-7 pb-3 border-b border-gray-200">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 border-l-4 border-blue-500 pl-3">Education</h2>
+            <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
+                <strong class="font-semibold">B.Sc. in Computer Science & Engineering</strong><br>
+                University Name — 2021–2025<br>
+                CGPA: 3.85/4.00
+            </p>
+        </div>
 
-    <div class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>Languages: Python, C/C++, JavaScript</li>
-        <li>Web: HTML, CSS, React, Node.js</li>
-[7/4/2025 2:29 PM] Chatgpt: <li>Database: MySQL, MongoDB</li>
-        <li>Tools: Git, VS Code, Postman</li>
-        <li>Cybersecurity: SQLi, XSS (lab-based), Linux</li>
-      </ul>
-    </div>
+        <!-- Skills Section -->
+        <div class="section mb-7 pb-3 border-b border-gray-200">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 border-l-4 border-blue-500 pl-3">Skills</h2>
+            <ul class="list-disc list-inside text-base sm:text-lg text-gray-700 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-2 gap-x-4 pl-4">
+                <li><strong class="font-medium">Languages:</strong> Python, C/C++, JavaScript</li>
+                <li><strong class="font-medium">Web:</strong> HTML, CSS, React, Node.js</li>
+                <li><strong class="font-medium">Database:</strong> MySQL, MongoDB</li>
+                <li><strong class="font-medium">Tools:</strong> Git, VS Code, Postman</li>
+                <li><strong class="font-medium">Cybersecurity:</strong> SQLi, XSS (lab-based), Linux</li>
+            </ul>
+        </div>
 
-    <div class="section">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Portfolio Website:</strong> Personal site built with HTML/CSS/JS</li>
-        <li><strong>Student Management System:</strong> Python app with MySQL</li>
-        <li><strong>SQLi Practice Lab:</strong> Tested DVWA in controlled CTF environment</li>
-      </ul>
-    </div>
+        <!-- Projects Section -->
+        <div class="section mb-7 pb-3 border-b border-gray-200">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 border-l-4 border-blue-500 pl-3">Projects</h2>
+            <ul class="list-disc list-inside text-base sm:text-lg text-gray-700 pl-4">
+                <li class="mb-2"><strong class="font-semibold">Portfolio Website:</strong> Designed and deployed a responsive personal website using HTML, CSS, and JavaScript to showcase projects and skills.</li>
+                <li class="mb-2"><strong class="font-semibold">Student Management System:</strong> Developed a full-stack Python application with MySQL for efficient student data management, including CRUD operations and secure user authentication.</li>
+                <li><strong class="font-semibold">SQLi Practice Lab:</strong> Actively participated in CTF environments, specifically testing and exploiting SQL Injection and Cross-Site Scripting (XSS) vulnerabilities on intentionally vulnerable web applications (e.g., DVWA) to gain hands-on cybersecurity experience.</li>
+            </ul>
+        </div>
 
-    <div class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Web Development — Programming Hero</li>
-        <li>TryHackMe: Intro to Cybersecurity</li>
-        <li>Data Structures — Coursera</li>
-      </ul>
-    </div>
+        <!-- Certifications Section -->
+        <div class="section mb-7 pb-3 border-b border-gray-200">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 border-l-4 border-blue-500 pl-3">Certifications</h2>
+            <ul class="list-disc list-inside text-base sm:text-lg text-gray-700 pl-4">
+                <li class="mb-2">Web Development — Programming Hero</li>
+                <li class="mb-2">TryHackMe: Intro to Cybersecurity</li>
+                <li>Data Structures — Coursera</li>
+            </ul>
+        </div>
 
-    <div class="section">
-      <h2>Languages</h2>
-      <ul>
-        <li>Bengali (Native)</li>
-        <li>English (Professional)</li>
-        <li>Hindi (Conversational)</li>
-      </ul>
-    </div>
+        <!-- Languages Section -->
+        <div class="section mb-7 pb-3 border-b border-gray-200">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 border-l-4 border-blue-500 pl-3">Languages</h2>
+            <ul class="list-disc list-inside text-base sm:text-lg text-gray-700 pl-4">
+                <li class="mb-2">Bengali (Native)</li>
+                <li class="mb-2">English (Professional)</li>
+                <li>Hindi (Conversational)</li>
+            </ul>
+        </div>
 
-    <div class="section">
-      <h2>References</h2>
-      <p>Available upon request</p>
+        <!-- References Section -->
+        <div class="section">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 border-l-4 border-blue-500 pl-3">References</h2>
+            <p class="text-base sm:text-lg text-gray-700">Available upon request</p>
+        </div>
     </div>
-  </div>
 </body>
 </html>
