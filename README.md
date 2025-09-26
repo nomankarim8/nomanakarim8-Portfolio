@@ -9,7 +9,7 @@ Welcome to my portfolio website! This project showcases my skills, projects, and
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [Contact](#contact)
-
+ 
 ## Demo
 You can view a live demo of the website [here](https://nomankarim8.github.io/nomanakarim8-Portfolio/).
 
