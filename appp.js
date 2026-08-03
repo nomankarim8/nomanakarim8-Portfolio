@@ -16,7 +16,7 @@ document.addEventListener('scroll', () => {
 	} else {
 		header.style.backgroundColor = 'transparent';
 	}
-});
+}); 
 
 menu_item.forEach((item) => {
 	item.addEventListener('click', () => {
